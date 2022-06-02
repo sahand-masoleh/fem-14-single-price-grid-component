@@ -22,6 +22,7 @@
 body {
 	min-height: 100vh;
 	display: grid;
+	place-items: center;
 	grid-template-rows: 1fr auto;
 	background-color: var(--light-gray);
 	font-size: 0.9em;
@@ -48,6 +49,15 @@ h1 {
 	gap: calc(var(--margin) / 2);
 }
 
+.flex-item-full-width {
+	width: 100%;
+}
+
+.flex-item-grow {
+	flex-grow: 1;
+	min-width: 50%;
+}
+
 /* IDS */
 
 #card {
@@ -57,6 +67,9 @@ h1 {
 	background-color: white;
 	border-radius: 0.5em;
 	overflow: hidden;
+
+	display: flex;
+	flex-wrap: wrap;
 }
 
 /* ~~~~~~~~~~ */
