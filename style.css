@@ -22,13 +22,91 @@
 body {
 	min-height: 100vh;
 	display: grid;
-	place-items: center;
 	grid-template-rows: 1fr auto;
+	background-color: var(--light-gray);
+	font-size: 0.9em;
+	line-height: 1.5em;
 }
+
+h1 {
+	font-size: 1.2em;
+}
+
+/* UTILITY CLASSES */
+
+.padding {
+	padding: var(--margin);
+}
+
+.box-shadow {
+	box-shadow: 0 1em 1em rgb(0, 0, 0, 0.1);
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--margin) / 2);
+}
+
+/* IDS */
 
 #card {
 	max-width: 40em;
-	margin: 1em;
+	height: min-content;
+	margin: calc(var(--margin) * 3) var(--margin);
+	background-color: white;
+	border-radius: 0.5em;
+	overflow: hidden;
+}
+
+/* ~~~~~~~~~~ */
+
+#join {
+	color: var(--grayish-blue);
+}
+
+#join h1 {
+	color: var(--cyan);
+}
+
+#join strong {
+	color: var(--bright-yellow);
+}
+
+/* ~~~~~~~~~~ */
+
+#sign-up {
+	background-color: var(--cyan);
+	color: white;
+}
+
+#term {
+	opacity: 0.5;
+}
+
+#price strong {
+	font-size: 2em;
+}
+
+#sign-up button {
+	padding: 1em;
+	background-color: var(--bright-yellow);
+	color: white;
+	border-radius: 0.25em;
+	border: none;
+}
+
+#sign-up button:hover {
+	cursor: pointer;
+	filter: brightness(1.1);
+}
+
+/* ~~~~~~~~~ */
+
+#why {
+	background-color: var(--cyan);
+	filter: brightness(1.1);
+	color: white;
 }
 
 /* FOOTER */
